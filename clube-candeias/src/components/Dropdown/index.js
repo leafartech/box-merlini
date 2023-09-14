@@ -32,7 +32,9 @@ export default function Dropdown({ liDrowdown, dropdownId, pills }) {
                             </div>
                         </div>
                         <div className={ styles.dropdownDiv } id={ `dropdown-text-${dropdownId}-${index}` }>
-                            {item.text}
+                            {item.text.map((content, index2) => (
+                                <p key={index2} style={{ marginTop: "12px"}}>{content}</p>
+                            ))}
                         </div>
                     </li>
                 )) }

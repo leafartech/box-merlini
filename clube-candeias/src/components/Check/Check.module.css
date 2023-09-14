@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 840px;
+    min-height: 380px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -12,14 +13,21 @@
     margin-top: 120px;
     padding: 42px 36px;
 }
+.second {
+    /* background: radial-gradient(100% 353.59% at 100% 0%, #FFFFFF 0%, #B4B4B4 100%); */
+    /* height: px; */
+    min-height: 360px;
+    background: var(--bg-color);
+    color: #fff;
+    margin-top: 0;
+}
 .check > img {
     position: absolute;
     top: -32px;
     z-index: 1;
-    
 }
 .check > div {
-    width: 50%;
+    width: 100%;
     padding: 24px;
 }
 .check .border {
@@ -59,6 +67,12 @@
     font-size: 18px;
     line-height: 146.5%;
 }
+.check .divCheck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .check .aq {
     position: relative;
     display: flex;
@@ -70,26 +84,36 @@
 .check .aq > div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .check .aq h3 {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
 } 
 .check .aq h4  {
+    position: relative;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
+    /* margin-left: 60px; */
 } 
+.check .aq h4::after {
+    /* content: "(R$4.719)"; */
+    position: absolute;
+    right: -72px;
+    bottom: 22px;
+    font-size: 16px;
+    font-weight: 400;
+}
 .check .aq span  {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     align-self: flex-end;
 } 
 .check .aq > div > div {
@@ -101,18 +125,30 @@
     align-items: flex-end;
 } 
 .check .last {
+    position: absolute;
+    bottom: 42px;
     margin-top: 24px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 12px;
 }
 .check p {
-    width: 320px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 119.5%;
+}
+.check .highlighted {
+    position: absolute;
+    bottom: -56px;
+    text-align: center;
+    max-width: 472px;
+    background: linear-gradient(180deg, #FFE100 -0.3%, #FFDA00 8.68%, #FFD400 16.67%, #FFCD03 21.66%, #FFC709 25.66%, #FBAD18 46.62%, #F7941D 67.59%, #EF7F1F 83.56%, #EA6C20 99.53%);
+    padding: 8px 18px;
+    border-radius: 999px;
 }
 @media (max-width: 425px) {
     .check {
@@ -123,12 +159,28 @@
         margin-top: 80px;
         width: 90%;
     }
+    .check .aq h4  {
+        margin-left: 18px;
+    } 
+    .second {
+        margin-top: 0!important
+    }
     .check > div {
         width: 100%;
     }
     .check h2 {
         font-size: 24px;
         margin-bottom: 24px;
+    }
+    .check .last {
+        position: relative;
+        bottom: 0;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
     }
     .check p{ 
         font-size: 14px;
@@ -140,13 +192,19 @@
         padding: 0;
         background: linear-gradient(270deg, #FFE100 0%, #FBAD18 47%, #EA6C20 100%);
     }
+    .check .aq {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
     .check .aq > div {
         align-items: center;
     }
     .check .aq > div h4 {
+        margin-top: 12px
     }
     .check .aq h3 {
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 4px
     } 
     .check .aq h4  {
         font-size: 40px;
@@ -160,7 +218,25 @@
     }
     .check .aq > div > div {
         position: absolute;
-        left: 8px;
-        top: 34px;
+        left: 28px;
+        top: 38px;
+    } 
+}
+@media (max-width: 340px) {
+    /* .check .aq h4::after {
+        content: "(R$4.719)";
+        position: absolute;
+        right: -10px;
+        bottom: 6px;
+        font-size: 14px;
+        font-weight: 400;
+    } */
+    .check .aq > div > div {
+        position: absolute;
+        left: 4px;
+        top: 52px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     } 
 }

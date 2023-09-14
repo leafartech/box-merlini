@@ -9,11 +9,11 @@
     background: var(--bg-color);
     border-radius: 24px;
     padding-bottom: 32px;
-    margin-bottom: 52px;
+    margin-bottom: 72px;
 }
 .card h3 {
     position: absolute;
-    top: -24px;
+    top: -54px;
     padding: 12px 24px;
     font-family: 'Oleo Script';
     background-color: var(--bg-color);
@@ -36,9 +36,10 @@
     font-size: 18px;
     line-height: 130%;
     color: #fff;
+    text-align: justify;
 }
 @media (max-width: 425px) {
     .card h3 {
-        width: 80%;
+        width: 90%;
     }
 }

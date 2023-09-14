@@ -23,8 +23,10 @@
     padding: 18px 0;
     margin-bottom: 18px;
     /* background: var(--pv-main-color); */
-    background: linear-gradient(270deg, #FFE100 0%, #FBAD18 47%, #EA6C20 100%);
+    background: linear-gradient(270deg, #467CBA 0%, #12447D 100%);
     font-family: 'Lato', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 12px;
 }
 .dropdown span {
     max-width: 300px;
@@ -43,7 +45,7 @@
 .dropdown svg {
     height: 16px;
     width: 16px;
-    fill: #12447D;
+    fill: #fff;
 }
 .dropdown li .dropdownDiv {
     position: absolute;
@@ -51,6 +53,7 @@
     z-index: -1;
     background: #fff;
     color: #141414;
+    font-weight: 600;
     padding:12px;
 }
 @media (min-width: 920px) { 

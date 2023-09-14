@@ -57,4 +57,7 @@
         right: auto;
         top: -60px;
     }
+    .comparison .comparisonIcon img {
+        display: none;
+    }
 }
