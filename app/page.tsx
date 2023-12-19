@@ -235,7 +235,7 @@ export default function Page() {
             <h2 className="text-xl sm:text-3xl font-semibold text-white">Entre em contato conosco</h2>
             <p className="sm:text-lg text-zinc-400 max-w-sm">Não perca mais tempo e nos contacte agora mesmo. Basta clicar no botão abaixo!</p>
             {/* <Button>Converse conosco pelo Whatsapp</Button> */}
-            <a href="" className="bg-red-500 rounded-lg text-center w-full sm:max-w-sm text-white font-semibold flex gap-2 py-3 px-6 text-sm sm:text-lg">
+            <a href="https://api.whatsapp.com/send?phone=554233235059&text=Ol%C3%A1,%20tudo%20bem?%20" className="bg-red-500 rounded-lg text-center w-full sm:max-w-sm text-white font-semibold flex gap-2 py-3 px-6 text-sm sm:text-lg">
               Converse conosco pelo whatsapp
             </a>
           </div>
