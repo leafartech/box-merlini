@@ -27,7 +27,9 @@ export default function Page() {
           </div>
         </div>
       </header>
-      <img src="./images/wpp.png" alt="" className="fixed bottom-2 left-2 z-50 w-14 h-14" />
+      <a href="https://api.whatsapp.com/send?phone=554233235059&text=Ol%C3%A1,%20tudo%20bem?%20" className="z-50 cursor-pointer fixed bottom-2 left-2">
+        <img src="./images/wpp.png" alt="" className="z-50 w-14 h-14" />
+      </a>
       <main>
         {/* <a href="" className="fixed bottom-0 right-0 z-10"> */}
         {/* </a> */}
