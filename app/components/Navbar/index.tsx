@@ -13,7 +13,7 @@ export default function Navbar() {
                 <span className="w-full h-[1.6px] bg-white"></span>
             </div>
             <ul className={`absolute top-0 sm:relative flex flex-col sm:flex-row gap-8 sm:gap-4 sm:items-center text-lg bg-zinc-950 sm:bg-transparen w-full sm:max-w-xs h-screen sm:h-full sm:translate-x-0 p-12 sm:p-0 pt-12 sm:pt-0 transition duration-200 ${navbar ? 'translate-x-0' : 'translate-x-[100%]'}`}>
-                <li><img src="./images/logo.png" alt="" className="h-8 sm:absolute left-4" /></li>
+                <li className="sm:hidden"><img src="./images/logo.png" alt="" className="h-8 sm:absolute left-4" /></li>
                 <li onClick={() => setNavbar(false)} className="hover:text-white text-zinc-300 cursor-pointer"><a href="#servicos">Serviços</a></li>
                 <li onClick={() => setNavbar(false)} className="hover:text-white text-zinc-300 cursor-pointer"><a href="#localizacao">Localização</a></li>
                 <li onClick={() => setNavbar(false)} className="hover:text-white text-zinc-300 cursor-pointer"><a href="#contato">Contato</a></li>
