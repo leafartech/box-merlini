@@ -6,7 +6,7 @@ export default function Navbar() {
     const [navbar, setNavbar] = useState<boolean>(false)
     return (
         <nav className="fixed top-0 w-full h-[64px] bg-zinc-950 flex items-center justify-center border-b-2 border-red-900 z-[1000]">
-{/*             <img src="./images/logo.png" alt="" className="h-12 sm:absolute left-4" /> */}
+            <img src="./images/logo.png" alt="" className="sm:hidden h-12 sm:absolute left-4" />
             <div className="absolute right-2 z-10 sm:hidden flex justify-center flex-col gap-[5px] w-[28px] h-[32px]" onClick={() => setNavbar(!navbar)}>
                 <span className="w-full h-[1.6px] bg-white"></span>
                 <span className="w-full h-[1.6px] bg-white"></span>
