@@ -214,7 +214,7 @@ export default function Page() {
         </Section>
         <Section className="sm:py-12">
           <div className="text-left sm:text-center z-10 mb-8">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white">O que estão dizendo do <span className="text-red-500 font-bold">Box By Merlini</span></h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white">O que estão dizendo da <span className="text-red-500 font-bold">Box By Merlini</span></h2>
             {/* <p className="text-lg text-zinc-400">Confira os integrantes do nosso time</p> */}
             <div className="hidden sm:block">
               <MySwiper />
